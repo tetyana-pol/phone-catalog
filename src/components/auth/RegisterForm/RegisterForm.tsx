@@ -63,7 +63,7 @@ export const RegisterForm = () => {
 
     try {
       const res = await fetch(
-        'https://fe-aug23-nohuggingonlydebugging-phone.onrender.com/auth/signUp',
+        'https://phone-catalog-api-docker.onrender.com/auth/signUp',
         {
           method: 'POST',
           headers: {
@@ -129,8 +129,8 @@ export const RegisterForm = () => {
             [styles.login_box__field_error]: hasNameError,
           })}
           type="text"
-          placeholder="enter your name"
-          autoComplete="on"
+          placeholder="Enter your name"
+          // autoComplete="on"
           value={name}
           onChange={(e) => {
             setName(e.target.value);
@@ -152,8 +152,8 @@ export const RegisterForm = () => {
             [styles.login_box__field_error]: hasEmailError,
           })}
           type="email"
-          placeholder="enter your email"
-          autoComplete="on"
+          placeholder="Enter your email"
+          // autoComplete="on"
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -177,8 +177,8 @@ export const RegisterForm = () => {
             [styles.login_box__field_error]: hasPassError,
           })}
           type="password"
-          placeholder="enter your password"
-          autoComplete="on"
+          placeholder="Enter your password"
+          // autoComplete="on"
           value={pass}
           onChange={(e) => {
             setPass(e.target.value);

@@ -57,7 +57,7 @@ export const LoginForm = () => {
     setIsloading(true);
     try {
       const response = await fetch(
-        'https://fe-aug23-nohuggingonlydebugging-phone.onrender.com/auth/signIn',
+        'https://phone-catalog-api-docker.onrender.com/auth/signIn',
         {
           method: 'POST',
           headers: {
@@ -164,10 +164,10 @@ export const LoginForm = () => {
         {passErrorMessages()}
 
         <div className={styles.additional_options}>
-          <label>
+          {/* <label>
             <input type="checkbox" />
             Remember me
-          </label>
+          </label> */}
           <p onClick={() => setIsModal(true)}>Forgot password</p>
         </div>
 
